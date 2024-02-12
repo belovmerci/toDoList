@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toDoList.css">
+    <title>Список дел</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: white;">Список дел</h1>
+
+        <!-- input field and buttons-->
+        <div style="display: flex; flex-wrap: wrap; height: 40px;" id="taskInput">
+            <input type="text" id="task" placeholder="Введите задачу" style="flex-grow: 1;">
+            <div style="display: flex; flex-wrap: wrap; height: 40px;">
+                <button style="background-color:lightgray;" onclick="addTask()">Добавить</button>
+                <button style="background-color:darkred;" onclick="clearAll()">Очистить всё</button>
+            </div>
+        </div>
+
+        <!-- filter buttons -->
+        <div id="filterButtons">
+            <button onclick="showAllTasks()">Все</button>
+            <button onclick="showActiveTasks()">Активные</button>
+            <button onclick="showCompletedTasks()">Завершенные</button>
+            <button onclick="showDeletedTasks()">Удаленные</button>
+        </div>
+
+        <!-- tasks display -->
+        <div id="taskList"></div>
+    </div>
+
+    <!-- В конце файла для инициализации его после всех других элементов -->
+    <script src="toDoList.js"></script>
+</body>
+</html>

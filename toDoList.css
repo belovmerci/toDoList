@@ -1,0 +1,77 @@
+h1
+{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white
+    margin-bottom: 20px;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: darkslategray;
+}
+
+img
+{
+    max-height: 30px;
+}
+
+.container
+{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: darkslategray;
+    /*
+    padding: 20px;
+    outline: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    */
+}
+
+#taskInput
+{
+    margin-bottom: 20px;
+    flex: auto;
+}
+
+.task
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.task button
+{
+    margin-left: 10px;
+}
+
+.check
+{
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.trash
+{
+    cursor: pointer;
+}
+
+.completed
+{
+    text-decoration: line-through;
+    color: #555;
+}
+
+.deleted {
+    display: none;
+}
+
+.deletedTasks {
+    display: none;
+}
